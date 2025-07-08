@@ -14,7 +14,6 @@
 ---> ╰────────────────────────────────────────────
 
 --> MENSAJES 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[MODULOS]/mensajes.lua"))()
 ---> 📋 Constantes y variables globales
 local DISCORD = "https://discord.gg/2qcRceCmtC"
 
@@ -122,7 +121,7 @@ _G.mensaje = {
 }
 wait(7)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-HUBS-/main/PARTES/parte2.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/HUB-PROTOTYPE/refs/heads/main/CONNECTORS/%5BSCRTIPS%5D.lua"))()
 
 --~ ╭────────────────────────────────────────────────────
 --~ │ 🌟      ¡HOLIII~! COMO ESTAS SOY RUBI~ 💖           
