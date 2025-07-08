@@ -121,7 +121,7 @@ _G.mensaje = {
 }
 wait(7)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/HUB-PROTOTYPE/refs/heads/main/CONNECTORS/%5BSCRTIPS%5D.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/HUB-PROTOTYPE/refs/heads/main/CONNECTORS/SCRIPTS.lua"))()
 
 --~ ╭────────────────────────────────────────────────────
 --~ │ 🌟      ¡HOLIII~! COMO ESTAS SOY RUBI~ 💖           
