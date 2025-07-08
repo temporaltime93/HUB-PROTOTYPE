@@ -1,3 +1,4 @@
+
 local baseURL = "https://raw.githubusercontent.com/temporaltime93/SCRTIPS/refs/heads/main/"
 
 -- * Tabla de hubs por GameId
@@ -29,8 +30,9 @@ if GENERAL then
     print("✅ SCRIPT:", _G.SCRIPT)
 
     -- * URL completa del script
-	
-    local url = baseURL.. SCRIPT .. SCRIPT .. ".lua"
+	local carpeta = SCRIPT.. "/" ..SCRIPT
+	print(carpeta)
+    local url = baseURL.. carpeta .. ".lua"
 
     -- * Modo de carga
     if POINT == "SI" then
