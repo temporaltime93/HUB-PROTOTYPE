@@ -173,8 +173,15 @@ BTN_ping.MouseButton1Click:Connect(function()
 	    _G.PING_PONG = "true"
 		_G.User_ID = texto
 		PING.Visible = false -- * Solo se oculta si cumple con la condición
+		_G.mensaje = {
+			M = "success", -- Opciones: error, log, success, help
+			T = "MENSION CONFIGURADA"
+		}
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-HUBS-/main/PARTES/parte2.lua"))()
 	else
-		warn("❌ Ingresa una ID válida") -- ! Recomendación: Manejar errores de manera más amigable para el usuario
+		_G.mensaje = {
+			M = "error", -- Opciones: error, log, success, help
+			T = "PON TU VERDADERA ID"
+		}
 	end
 end)
