@@ -23,5 +23,5 @@ else
     _G.CARGA = "VIRUS" 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[CARGAS]/carga.lua"))()
     wait(2)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[MODULOS]/NOTI.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/HUB-PROTOTYPE/refs/heads/main/UTILITIES/%5BNOTI%5D.lua"))()
 end
