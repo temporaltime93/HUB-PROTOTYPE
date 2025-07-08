@@ -35,13 +35,24 @@ if GENERAL then
     if POINT == "SI" then
         if _G.PING_PONG == "true" then
             local success, result = pcall(function()
+                _G.mensaje = {
+        	        M = "success", -- Opciones: error, log, success, help
+        	        T = "HUB ENCONTRADO: " ..SCRIPT
+                }
                 return loadstring(game:HttpGet(url))()
             end)
 
             if not success then
-                warn("❌ Error al ejecutar el script:", result)
+                _G.mensaje = {
+            	    M = "error", -- Opciones: error, log, success, help
+            	    T = "Error al ejecutar el script: " ..result
+                }
             end
         else
+            _G.mensaje = {
+                M = "help", -- Opciones: error, log, success, help
+                T = "ESTE SCRIPT USA 'ENDPOINT' ASI QUE DANOS TU ID DE DISCORD"
+            }
             loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[CARGAS]/ping.lua"))()
         end
     else
@@ -50,10 +61,15 @@ if GENERAL then
         end)
 
         if not success then
-            warn("❌ Error al ejecutar el script:", result)
+            _G.mensaje = {
+        	    M = "error", -- Opciones: error, log, success, help
+        	    T = "Error al ejecutar el script: " ..result
+            }
         end
     end
 else
-    _G.mensaje = { modo = "error", texto = "❌ NO TENEMOS UN HUB PARA TU JUEGO: " .. juegoID }
-    warn(_G.mensaje.texto)
+     _G.mensaje = {
+	    M = "error", -- Opciones: error, log, success, help
+	    T = "NO TENEMOS UN HUB PARA TU JUEGO: " .. juegoID
+    }
 end
