@@ -110,6 +110,6 @@ end)
 -- * Ejemplo para probarlo:
 _G.mensaje = {
 	M = "success", -- Opciones: error, log, success, help
-	T = "NOTI CARGO CORRECTAMENTE"
+	T = "JOIN SERVER: discord.gg/2qcRceCmtC"
 }
 
