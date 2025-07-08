@@ -115,10 +115,13 @@ task.spawn(function()
     gui:Destroy()
 end)
 
- _G.mensaje = { texto = "LOADER..", modo = "success" }
 wait(3)
- _G.mensaje = { texto = "COMPLETO", modo = "success" }
+_G.mensaje = {
+	M = "log", -- Opciones: error, log, success, help
+	T = "BUSCANDO TU HUB..."
+}
 wait(7)
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-HUBS-/main/PARTES/parte2.lua"))()
 
 --~ ╭────────────────────────────────────────────────────
