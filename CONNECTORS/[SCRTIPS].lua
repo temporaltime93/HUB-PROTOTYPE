@@ -30,8 +30,8 @@ if GENERAL then
     print("✅ SCRIPT:", _G.SCRIPT)
 
     -- * URL completa del script
-	local carpeta = SCRIPT.. "/" ..SCRIPT
-	print(carpeta)
+    local carpeta = SCRIPT.. "/" ..SCRIPT
+    print(carpeta)
     local url = baseURL.. carpeta .. ".lua"
 
     -- * Modo de carga
