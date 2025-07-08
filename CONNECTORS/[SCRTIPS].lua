@@ -53,7 +53,7 @@ if GENERAL then
                 M = "help", -- Opciones: error, log, success, help
                 T = "ESTE SCRIPT USA 'ENDPOINT' ASI QUE DANOS TU ID DE DISCORD"
             }
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/-PROTOTYPE-/main/[CARGAS]/ping.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/temporaltime93/HUB-PROTOTYPE/refs/heads/main/CONNECTORS/EXTRA/%5BPING%5D.lua"))()
         end
     else
         local success, result = pcall(function()
